@@ -11,18 +11,18 @@ function elm_line1( x1, x2, N, ratio )
     α = 1.0
     factor = 1.0/N
   else
-    texp = 1.0/(N-1)
+    texp = 1/(N-1)
     α = ratio^texp
-    factor = (1.0 - α)/(1.0 - α^2)
+    factor = (1.0 - α)/(1.0 - α^N)
   end
 
   # length of the first element
   Δx = (x2 - x1)*factor
 
   xe = zeros(N+1)
-
+  xe[1] = x1
   for i = 2:N+1
-    x[i] = xe[i-1] + Δx
+    xe[i] = xe[i-1] + Δx
     Δx = α*Δx
   end
 
