@@ -1,3 +1,18 @@
+"""
+ FSELIB
+
+ Symmetric discretization of a line segment
+ into a graded mesh of n elements
+ subtended between the left end-point x1
+ and the right end-point x2
+
+ n is 1 or even: 2,4,6,...
+
+ The variable "ratio" is the ratio
+ of the size of the mid
+ elements to the size of the first element
+"""
+
 function elm_line2( x1, x2, N::Int64, ratio )
 
   if N == 1

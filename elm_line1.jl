@@ -1,3 +1,18 @@
+"""
+ FSELIB
+
+ Unsymmetrical discretization of a line segment
+ into a graded mesh of n elements
+ subtended between the left end-point x1
+ and the right end-point x2
+
+ The variable "ratio" is the ratio
+ of the length of the last
+ element to the length of the first element.
+
+ xe: element end-nodes
+"""
+
 function elm_line1( x1, x2, N, ratio )
 
   if N == 1
