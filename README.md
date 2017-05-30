@@ -1,4 +1,3 @@
-A library of finite and spectral element method.
-
-Based on FSELIB.
-
+My attempt to convert
+C. Pozridikis's [FSELIB](dehesa.freeshell.org/FSELIB)
+to Julia.
