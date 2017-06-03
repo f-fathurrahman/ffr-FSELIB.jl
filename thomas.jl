@@ -34,4 +34,6 @@ function thomas (n,a,b,c,s)
     x[i] = y[i] - d[i]*x[i+1]
   end
 
-return
+  return x
+
+end
